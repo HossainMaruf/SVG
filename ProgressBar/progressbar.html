@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress SVG</title>
+    <!-- bootstrap css file -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- custom css file -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- custom js file -->
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <!-- Progress Bar Circular -->
+    <input type="number" class="form-control mx-auto mt-3 w-50" onchange="circularProgressResult(this.value);" placeholder="Circular Value">
+    <section class="circular-progress-section my-5">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 text-center p-3">
+                        <svg >
+                            <circle cx="50%" cy="50%" r="50"></circle>
+                        </svg>
+                        <div class="numeric-skill">
+                            <span class="skill-value">0</span>
+                            <span class="percentage">%</span>
+                        </div>
+                        <div class="text">HTML</div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 text-center p-3">
+                        <svg>
+                            <circle cx="50%" cy="50%" r="50"></circle>
+                        </svg>
+                        <div class="numeric-skill">
+                            <span class="skill-value">0</span>
+                            <span class="percentage">%</span>
+                        </div>
+                        <div class="text">CSS</div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 text-center p-3">
+                        <svg>
+                            <circle cx="50%" cy="50%" r="50"></circle>
+                        </svg>
+                        <div class="numeric-skill">
+                            <span class="skill-value">0</span>
+                            <span class="percentage">%</span>
+                        </div>
+                        <div class="text">JavaScript</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress Bar Linear -->
+    <input type="number" class="form-control mx-auto w-50" onchange="lineProgressResult(this.value);" placeholder="Linear Value">
+    <section class="line-progress-section my-5">
+        <div class="container-fluid">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <span class="text">HTML</span>
+                        <svg>
+                            <line x1='0' y1='50%' x2='100%' y2='50%'/>
+                        </svg>
+                        <span class="line-skill-value">0</span>
+                        <span class="percentage">%</span>
+                    </div>
+                    <div class="col-sm-4">
+                        <span class="text">CSS</span>
+                        <svg>
+                            <line x1='0' y1='50%' x2='100%' y2='50%'/>
+                        </svg>
+                        <span class="line-skill-value">0</span>
+                        <span class="percentage">%</span>
+                    </div>
+                    <div class="col-sm-4">
+                        <span class="text">JavaScript</span>
+                        <svg>
+                            <line x1='0' y1='50%' x2='100%' y2='50%'/>
+                        </svg>
+                        <span class="line-skill-value">0</span>
+                        <span class="percentage">%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress Bar Vertical -->
+    <input type="number" class="form-control mx-auto w-50" onchange="verticalProgressResult(this.value)" placeholder="Vertical Value">
+    <section class="vertical-progress-section my-5">
+        <div class="container-fluid text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 p-3">
+                        <span class="text">HTML</span>
+                        <span class="vertical-skill-value">0</span>
+                        <span class="percentage">%</span>
+                        <svg><rect></rect></svg>
+                        <span class="text">CSS</span>
+                        <span class="vertical-skill-value">0</span>
+                        <span class="percentage">%</span>
+                        <svg><rect></rect></svg>
+                        <span class="text">JavaScript</span>
+                        <span class="vertical-skill-value">0</span>
+                        <span class="percentage">%</span>
+                        <svg><rect></rect></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

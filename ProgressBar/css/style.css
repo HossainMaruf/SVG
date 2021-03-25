@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* circular-progress bar design start */
+
+.circular-progress-section .container-fluid .container {
+    background-color: rgba(3, 3, 32, 0.678);
+}
+.circular-progress-section .container-fluid .container svg {
+    background-color: rgba(3, 3, 32, 0.678);
+    /* background-color: white; */
+    transition: all 0.5s;
+}
+.circular-progress-section .container-fluid .container svg:hover{
+    transform: translateY(-5px);
+}
+svg circle {
+    fill: rgba(3, 3, 32, 0.678);
+    stroke: rgb(88, 207, 32);
+    stroke-width: 10px;
+    stroke-dasharray: 133%;
+    stroke-dashoffset: 133%;
+    transition: stroke-dashoffset 1s;
+}
+.numeric-skill {
+    position: relative;
+    top: -45%;
+}
+
+/* circular-progress bar design end */
+
+/* line progress bar design start */
+
+.line-progress-section .container-fluid .container {
+    background-color: rgba(3, 3, 32, 0.678);
+    padding-top: 7%;
+}
+.line-progress-section .container-fluid .container svg {
+    width: 100%;
+    height: 20%;
+    /* background-color: white; */
+    background-color: rgba(3, 3, 32, 0.678);
+}
+
+svg line {
+    stroke: rgb(88, 207, 32);
+    stroke-width: 10px;
+    stroke-dasharray: 141%;
+    stroke-dashoffset: 141%;
+    transition: stroke-dashoffset 1s;
+}
+
+/* line progress bar design end */
+
+/* vertical progress bar design start */
+
+.vertical-progress-section .container-fluid .container {
+    background-color: rgba(3, 3, 32, 0.678);
+}
+
+.vertical-progress-section .container-fluid .container svg {
+    /* background-color: rgb(28, 6, 65); */
+    height: 400px;
+    width: 100px;
+    padding-left: 25px;
+}
+
+.vertical-progress-section .container-fluid .container svg rect {
+    width: 50px;
+    height: 100%;
+    fill: rgba(3, 3, 32, 0.678);
+    stroke: rgb(255, 255, 3);
+    stroke-width: 5px;
+    stroke-dasharray: 313%;
+    stroke-dashoffset: 313%;
+    transition: stroke-dashoffset 1s;
+}
+
+/* vertical progress bar design end */
+
+
+/* global css for all elements start */
+
+.text, .percentage{
+    color: white;
+}
+
+.skill-value, .line-skill-value, .vertical-skill-value {
+    color: white;
+    font-size: x-large;
+}
+
+/* global css for all elements end */
